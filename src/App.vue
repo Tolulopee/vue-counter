@@ -1,6 +1,6 @@
 <template>
   
-
+np
   <Counter/>
 </template>
 
@@ -11,9 +11,7 @@ import Counter from './components/Counter.vue'
 export default {
   name: 'App',
   components: {
-  
-    Counter
-  }
+    Counter,}
 }
 </script>
 
