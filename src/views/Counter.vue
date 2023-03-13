@@ -1,8 +1,8 @@
 <template>
     <div class="contain">
         <p>{{ count }}</p>
-        <button  @click="increment">Increment</button>
-        <button @click="decrement" >Decrement</button>
+        <button  @click="increment">+</button>
+        <button @click="decrement" >-</button>
         <button @click="setvalue">SetValue</button>
         <button @click="reset">Reset</button>
         
@@ -44,11 +44,11 @@ export default{
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+  background-color:white;
   background-repeat:no-repeat;
   background-size:cover;
 }
-.container {
+.contain {
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
