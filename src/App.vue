@@ -8,6 +8,10 @@
 
   </div>
   </nav>
+  <footer>
+    <p>Created by <a href="https://github.com/Tolulopee">Kalejaiye Tolulope</a></p>
+    <h3>Copyright &copy; 2023</h3>
+  </footer>
   
   <router-view></router-view>
 </template>
@@ -65,6 +69,16 @@ nav h1{
 .nav-btns:hover{
   background-color:#eee;
   color:#333;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#333;
+  color: white;
+  text-align: center;
 }
 
 </style>
