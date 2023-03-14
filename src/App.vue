@@ -9,7 +9,9 @@
   </div>
   </nav>
   <footer>
-    <p>Created by <a href="https://github.com/Tolulopee">Kalejaiye Tolulope</a></p>
+    <p>Created by 
+      <a class="footer-link" href="https://github.com/Tolulopee">Kalejaiye Tolulope</a>
+    </p>
     <h3>Copyright &copy; 2023</h3>
   </footer>
   
@@ -79,6 +81,18 @@ footer{
   background-color:#333;
   color: white;
   text-align: center;
+}
+
+footer p{
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-link{
+  color: #eee;
+  text-decoration: none;
 }
 
 </style>
