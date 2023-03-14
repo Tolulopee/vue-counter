@@ -2,9 +2,9 @@
   <nav>
   <h1>Vue Counter App</h1>
   <div class="nav-links">
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/counter">Counter</router-link>
+    <router-link class="nav-btns" to="/">Home</router-link>
+    <router-link class="nav-btns" to="/about">About</router-link>
+    <router-link class="nav-btns" to="/counter">Counter</router-link>
 
   </div>
   </nav>
@@ -22,8 +22,7 @@ export default {
 
 <style>
 body {
-  background-color: #333;
-
+  background-color:white;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -36,10 +35,15 @@ nav {
   justify-content: space-between;
   color: #eee;
   padding: 0.2rem 2rem;
-  background-color: #53d198;
+  background-color: #333;
   animation: slider ease 1.5s;
   animation-iteration-count: 1;
   animation-fill-mode: backwards;
+}
+
+nav h1{
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .nav-links{
@@ -47,7 +51,20 @@ nav {
   align-items:center;
   justify-content:space-between;
   width:300px;
-  font-size:30px;
+  font-size:25px;
+}
+
+.nav-btns{
+  color:white;
+  text-decoration:none;
+  padding:10px;
+  border-radius:5px;
+  transition:all 0.3s ease-in-out;
+}
+
+.nav-btns:hover{
+  background-color:#eee;
+  color:#333;
 }
 
 </style>

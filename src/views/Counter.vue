@@ -1,12 +1,13 @@
 <template>
     <div class="contain">
         <p>{{ count }}</p>
-        <button  @click="increment">+</button>
-        <button @click="decrement" >-</button>
-        <button @click="setvalue">SetValue</button>
-        <button @click="reset">Reset</button>
-        
-    </div>
+        <button class="incre-btn" @click="increment">+</button>
+        <button class="reset" @click="reset">Reset</button>
+        <button  class="decre-btn" @click="decrement" >-</button>
+        <input type="text" v-model="count">
+   </div>
+
+  
 </template>
 
 <script>
@@ -24,9 +25,7 @@ export default{
         decrement(){
             this.count--;
         },
-        setvalue(){
-            this.count=10;
-        },
+        
         reset(){
             this.count=0;
         }
@@ -35,7 +34,7 @@ export default{
 
 </script>
 
-<style >
+<style scoped >
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 * {
   box-sizing: border-box;
@@ -53,32 +52,67 @@ body {
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
 }
-button{
-  display: inline-block;
-  background: #fff;
-  color: black;
-  border:1px solid #bdc2e8 ;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: inherit;
-  
+.contain p {
+ 
+  font-size: 60px;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  padding: 0;
+  margin: 0;
+  color: rgb(0, 139, 74);
+
+
 }
-.btn:focus {
-  outline: none;
-}
-.btn:active {
-  transform: scale(0.98);
-}
-.btn-block {
-  display: block;
-  width: 100%;
+button {
+   background-color:rgb(46, 164, 79);
+        color:white;
+        font-weight:bold;
+        font-size:14px;
+        border:none;
+        height:36px;
+        width:80px;
+        border-radius:5px;
+  margin-left:8px;
+  cursor:pointer;
+   transition:box-shadow 0.15s;
+
 }
 
+button:hover{
+  box-shadow: 4px 4px 7px  rgb(28, 26,26);
+}
+
+button:active{
+  box-shadow: 2px 2px 5px  rgb(28, 26,26);
+}
+.reset{
+  background-color:rgb(46, 164, 79);
+  color:white;
+  font-weight:bold;
+  font-size:14px;
+  border:none;
+  height:36px;
+  width:80px;
+  border-radius:5px;
+  margin-left:8px;
+  cursor:pointer;
+  transition:box-shadow 0.15s;
+}
+.contain input {
+  display:block;
+  width: 100%;
+  background-color: #fff;
+  padding:10px 20px;
+  border: 1px solid #555;
+  height: 2rem;
+  
+}
+
+.contain input:focus {
+   border: 2px solid #555;
+}
 </style>

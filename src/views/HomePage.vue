@@ -11,7 +11,7 @@
 
 
 export default {
-    name: "HomeView",
+    name: "HomePage",
 };
 </script>
 
