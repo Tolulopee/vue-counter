@@ -1,6 +1,6 @@
 <template>
     <div class="contain">
-        <p>{{ count }}</p>
+        <p>{{ counter}}</p>
         <div class="btn-contain">
         <button class="incre-btn" @click="increment">+</button>
         <button class="reset" @click="reset">Reset</button>
@@ -15,6 +15,12 @@
 <script>
 export default{
     name:'counterApp',
+    computed:{
+      counter(){
+          return this.$store.getters.counter;
+      }
+
+    },
     data(){
         return{
             count:0
@@ -31,7 +37,8 @@ export default{
         reset(){
             this.count=0;
         }
-    }
+    },
+
 }
 
 </script>
