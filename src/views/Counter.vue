@@ -115,6 +115,13 @@ body {
   transition:box-shadow 0.15s;
   
 }
+.incre-btn{
+  background-color:#AFE1AF;
+}
+
+.decre-btn{
+  background-color:#E34234;
+}
 
 .incre-btn:hover,
 .reset:hover,
