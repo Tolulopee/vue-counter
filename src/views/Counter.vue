@@ -5,7 +5,7 @@
         <button class="incre-btn" @click="increment">+</button>
         <button class="reset" @click="reset">Reset</button>
         <button  class="decre-btn" @click="decrement" >-</button>
-        <input class="input-box" type="text" v-model="count">
+        <input class="input-box" type="text" v-model="counter">
         </div>
    </div>
 
@@ -21,25 +21,38 @@ export default{
       }
 
     },
-    data(){
-        return{
-            count:0
-        }
-    },
     methods:{
         increment(){
-            this.count++;
+            this.$store.commit('increment');
         },
         decrement(){
-            this.count--;
+            this.$store.commit('decrement');
         },
         
         reset(){
-            this.count=0;
+            this.$store.commit('reset');
         }
     },
+    }
+    //data(){
+     //   return{
+       //     count:0
+      //  }
+   // },
+   // methods:{
+      //  increment(){
+           // this.count++;
+       // },
+       // decrement(){
+          //  this.count--;
+       // },
+        
+       // reset(){
+          //  this.count=0;
+       // }
+   // },
 
-}
+//}
 
 </script>
 
