@@ -2,9 +2,11 @@
     <div class="contain">
         <p>{{ counter}}</p>
         <div class="btn-contain">
+          <div class="btns-wrapper">
         <button class="incre-btn" @click="increment">+</button>
         <button class="reset" @click="reset">Reset</button>
         <button  class="decre-btn" @click="decrement" >-</button>
+          </div>
         <input class="input-box" type="text" v-model="counter">
         </div>
    </div>
@@ -13,6 +15,8 @@
 </template>
 
 <script>
+
+
 export default{
     name:'counterApp',
     computed:{
@@ -79,7 +83,6 @@ body {
   min-height: 300px;
   padding: 30px;
   border-radius: 5px;
-  border:2px solid red;
 }
 .contain p {
  font-size: 60px;
@@ -94,10 +97,20 @@ body {
 
 .btn-contain{
   display:flex;
-  justify-content:center;
+  flex-direction: column;
+  justify-content:space-between;
   align-items:center;
   margin-top:20px;
 }
+
+.btns-wrapper{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+
+}
+
 .incre-btn,
 .reset,
 .decre-btn{
@@ -107,8 +120,8 @@ body {
   font-weight:400;
   font-size:25px;
   border:none;
-  height:72px;
-  width:200px;
+  height:40px;
+  width:120px;
   border-radius:5px;
   margin-left:8px;
   cursor:pointer;
@@ -123,6 +136,12 @@ body {
   background-color:#E34234;
 }
 
+.reset{
+  background-color: aliceblue;
+  color:black;
+  border:none;
+}
+
 .incre-btn:hover,
 .reset:hover,
 .decre-btn:hover{
@@ -134,13 +153,15 @@ body {
 }
 .input-box {
   display:block;
-  width: 100%;
+  width: 60%;
   background-color: #fff;
   padding:10px 20px;
-  border: 1px solid #555;
-  height: 2rem;
+  border: 0.7px solid black;
+  border-radius:7px;
+  margin-top:20px;
+  height: 40px;
   grid-column-start: 1;
   grid-column-end: 6;
-  border:1px solid red;
+  
   }
 </style>

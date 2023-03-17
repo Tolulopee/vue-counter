@@ -40,7 +40,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   color: #eee;
-  padding: 0.2rem 2rem;
+  padding: 4px 32px;
   background-color: #333;
   animation: slider ease 1.5s;
   animation-iteration-count: 1;
@@ -91,8 +91,13 @@ footer p{
 }
 
 .footer-link{
-  color: #eee;
+  color: #D2042D;
   text-decoration: none;
+}
+
+.footer-link:hover{
+  color: #814141;
+  text-decoration: underline;
 }
 
 </style>

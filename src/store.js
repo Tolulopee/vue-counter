@@ -6,6 +6,7 @@ const store = createStore(
             counter: 0
         },
         getters:{
+            
             counter: state => state.counter
         },
         mutations:{
@@ -18,6 +19,7 @@ const store = createStore(
             reset(state){
                 state.counter = 0
             },
+            
 
         },
         actions:{

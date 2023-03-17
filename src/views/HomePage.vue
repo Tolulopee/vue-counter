@@ -3,7 +3,7 @@
     <h1>Vue Counter App</h1>
     
     <router-link to="/counter">
-        <button>Counter</button>
+        <button>Counter>></button>
     </router-link>
     </div>
     
@@ -30,7 +30,7 @@ export default {
 }
 h1{
     font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 800;
     color: #000;
     text-align: center;
@@ -39,7 +39,7 @@ h1{
 
 button{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 600;
     color: #fff;
     background-color: #000;
